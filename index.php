@@ -16,7 +16,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js" charset="utf-8"></script>
     <!-- TEMPLATE: MESSAGE MENU -->
     <script id="item-template" type="text/x-handlebars-template">
-      <!-- scrivere qui il template -->
+      <div class="bevanda">
+        <div class="cancella-aggiorna">
+          <p class="cancella">Cancella prodotto ></p>
+          <br>
+          <p class="aggiorna">Aggiorna prezzo ></p>
+        </div>
+        <div class="dati-bevanda">
+          <br>
+          <p>Nome: <span>{{nome}}</span> </p>
+          <p>Marca: <span>{{marca}}</span> </p>
+          <p>Prezzo: <span>{{prezzo}}</span> </p>
+          <p>Scadenza: <span>{{scadenza}}</span> </p>
+          <br>
+        </div>
+      </div>
     </script>
     <!-- CSS: MY STYLE -->
     <link rel="stylesheet" href="style.css">
@@ -30,6 +44,15 @@
   <body>
 
     <div id="container">
+      <div id="titolo">
+        <h1>BEVANDE dbDrink</h1>
+      </div>
+      <div id="operazioniDB">
+        <h3>Aggiungi bevande</h3>
+      </div>
+      <div id="bevande">
+
+      </div>
 
     </div>
 

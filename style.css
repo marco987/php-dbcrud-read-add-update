@@ -8,7 +8,61 @@
 }
 
 #container {
-  width: 100vw;
-  height: 100vh;
   padding: 50px 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#titolo {
+  width: 100%;
+  height: 50px;
+  background-color: blue;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#operazioniDB {
+  width: 100%;
+  height: 50px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#operazioniDB h3:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.bevanda {
+  width: 100%;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+}
+
+.dati-bevanda {
+  border-left: solid blue 3px;
+  padding-left: 20px;
+  width: 300px;
+}
+
+.cancella-aggiorna {
+  padding-right: 20px;
+  width: 200px;
+}
+
+.cancella-aggiorna p:hover {
+  cursor: pointer;
+  font-weight: bold;
+  color: blue;
+}
+
+.dati-bevanda span {
+  font-weight: bold;
+  color: blue;
 }

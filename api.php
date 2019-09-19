@@ -5,7 +5,7 @@
   $servername = 'localhost';
   $username = 'root';
   $password = 'root';
-  $dbname = 'NOME_DATABASE';
+  $dbname = 'dbdrink';
 
   $conn = new mysqli($servername, $username, $password, $dbname);
 
