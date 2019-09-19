@@ -16,7 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js" charset="utf-8"></script>
     <!-- TEMPLATE: MESSAGE MENU -->
     <script id="item-template" type="text/x-handlebars-template">
-      <div class="bevanda">
+      <div class="bevanda" data-id="{{id}}">
         <div class="cancella-aggiorna">
           <p class="cancella">Cancella prodotto ></p>
           <br>
