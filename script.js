@@ -55,6 +55,30 @@ function deleteBevanda() {
   });
 }
 
+function addBevanda() {
+
+  var nome = prompt("Inserisci nome bevanda");
+  var marca = prompt("Inserisci marca bevanda");
+  var prezzo = prompt("Inserisci prezzo bevanda - solo numeri interi");
+  var scadenza = prompt("Inserisci scadenza bevanda - AAAA-MM-GG");
+
+  $.ajax({
+    url: "api-add.php",
+    method: "GET",
+    data: {
+      nome : nome,
+      marca : marca,
+      prezzo : prezzo,
+      scadenza : scadenza
+    },
+    success: function(data){
+      getBevande(data);
+    },
+    error: function(){
+      alert("Errore");
+    }
+  });
+}
 
 
 
@@ -71,6 +95,7 @@ function deleteBevanda() {
 getBevande();
 
 $(document).on("click", ".cancella", deleteBevanda);
+$(document).on("click", "#operazioniDB h3", addBevanda);
 
 
 
