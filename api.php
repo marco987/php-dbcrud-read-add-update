@@ -15,23 +15,22 @@
     die();
   }
 
-  $query = "QUERY_PER_IL_DATABASE";
+  $query = "SELECT *
+            FROM bevande";
+
   $res = $conn -> query($query);
 
-  $array = [];
+  $bevande = [];
 
   if ($res && $res -> num_rows > 0) {
-
     while($row = $res -> fetch_assoc()) {
-
-      $array[] = $row;
-
+      $bevande[] = $row;
     }
   }
 
   $conn->close();
 
-  echo json_encode($array);
+  echo json_encode($bevande);
 
 
 

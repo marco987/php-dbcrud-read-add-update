@@ -26,7 +26,7 @@
           <br>
           <p>Nome: <span>{{nome}}</span> </p>
           <p>Marca: <span>{{marca}}</span> </p>
-          <p>Prezzo: <span>{{prezzo}}</span> </p>
+          <p>Prezzo: € <span>{{prezzo}}</span> </p>
           <p>Scadenza: <span>{{scadenza}}</span> </p>
           <br>
         </div>
